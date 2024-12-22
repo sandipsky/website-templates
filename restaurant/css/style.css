@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Asap', sans-serif;
 }
 
@@ -26,12 +27,37 @@ body{
 
 /* Navbar  */
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5vw;
-    background-color: black;
+    padding: 25px 5vw;
+    background: transparent;
     color: white;
+    transition: all ease .5s;
+}
+
+.navbar.scrolled {
+    width: 100%;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(214, 214, 214, 0.75);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(214, 214, 214, 0.75);
+    box-shadow: 0px 0px 25px 0px rgba(214, 214, 214, 0.75);
+}
+
+.navbar.scrolled .nav-info span,
+.navbar.scrolled .nav-links a,
+.navbar.scrolled .nav-logo, 
+.navbar.scrolled .menu-toggle{
+    opacity: 0.8;
+    color: black;
+}
+
+.navbar.scrolled .nav-links a:hover {
+    color: red;
 }
 
 .nav-logo {
@@ -85,6 +111,9 @@ body{
     transition: all ease-in-out 0.3s;
     transform: translateX(100%);
     z-index: 10;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(214, 214, 214, 0.75);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(214, 214, 214, 0.75);
+    box-shadow: 0px 0px 25px 0px rgba(214, 214, 214, 0.75);
 }
 
 .side-menu .nav-links {
@@ -121,3 +150,26 @@ body{
 }
 
 /* navbar  */
+
+/* header */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(../images/header-banner.jpg) center/cover fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 5vw;
+}
+
+.hero-section h2 {
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hero-section-title {
+    color: #fff;
+    font-size: 2.8rem;
+    padding: 1rem 0;
+}
