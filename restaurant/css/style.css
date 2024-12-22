@@ -4,3 +4,120 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Asap', sans-serif;
+}
+
+/* Utils */
+.btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all ease .5s;
+}
+
+.btn:hover {
+    background-color: darkred;
+}
+
+/* Utils */
+
+/* Navbar  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5vw;
+    background-color: black;
+    color: white;
+}
+
+.nav-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all ease .5s;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+.nav-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    font-size: 1.5em;
+}
+
+.side-menu {
+    position: fixed;
+    height: 100%;
+    background-color: white;
+    width: 200px;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 32px;
+    overflow: hidden;
+    display: none;
+    transition: all ease-in-out 0.3s;
+    transform: translateX(100%);
+    z-index: 10;
+}
+
+.side-menu .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.side-menu .nav-links a {
+    color: black;
+}
+
+.nav-close-container {
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+
+.nav-close {
+    cursor: pointer;
+}
+
+.side-menu .nav-links a:hover {
+    color: red;
+}
+
+.side-menu .nav-info {
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-menu.open {
+    transform: translateX(0);
+}
+
+/* navbar  */

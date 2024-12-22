@@ -1,0 +1,21 @@
+@media screen and (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-info{
+        display: none;
+    }
+
+    .side-menu {
+        display: flex;
+    }
+
+    .side-menu .nav-links, .side-menu .nav-info {
+        display: flex;
+    }
+}
