@@ -1,3 +1,4 @@
+AOS.init();
 const mobileMenu = document.getElementById('mobile-menu');
 const navClose = document.getElementById('nav-close');
 const sideMenu = document.querySelector('.side-menu');
