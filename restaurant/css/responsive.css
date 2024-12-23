@@ -18,4 +18,12 @@
     .side-menu .nav-links, .side-menu .nav-info {
         display: flex;
     }
+
+    .menu-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
