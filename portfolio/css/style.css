@@ -365,3 +365,56 @@ body {
 }
 
 /* about  */
+
+section {
+    width: 100%;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 3rem 0;
+    margin: 0 auto;
+}
+
+.category {
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
