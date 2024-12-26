@@ -22,6 +22,20 @@ body {
     font-family: 'Asap', sans-serif;
 }
 
+.section__subheader {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.section__header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-alt);
+    text-align: center;
+}
+
 .btn {
     padding: 0 24px;
     height: 45px;
@@ -366,55 +380,113 @@ body {
 
 /* about  */
 
-section {
-    width: 100%;
-    padding: 3rem 1rem;
-    text-align: center;
-}
+/* skills  */
 
-h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-p {
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    color: #555;
+.skills {
+    padding: 10rem 10vw;
+    min-height: 100vh;
 }
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    padding: 3rem 0;
-    margin: 0 auto;
+    padding-top: 5rem;
 }
 
-.category {
-    text-align: left;
-}
-
-h3 {
+.skills h3 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
-ul {
+.skills ul {
     list-style: none;
     padding: 0;
 }
 
-li {
+.skills li {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 0.5rem;
+    text-align: center;
+
+}
+
+.skills li span {
+    text-align: center;
 }
 
 .icon {
     width: 24px;
     height: 24px;
+}
+
+/* skills */
+
+.journey__grid {
+    max-width: 900px;
+    margin-inline: auto;
+    margin-top: 4rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.journey__grid>div {
+    display: grid;
+    gap: 1rem;
+}
+
+.journey__grid__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.journey__card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.journey__card>span {
+    position: relative;
+    isolation: isolate;
+    padding-inline: 2px;
+    height: 100%;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.journey__card>span::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 2px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+}
+
+.journey__card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.journey__card h5 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.journey__card p {
+    color: var(--text-light);
 }

@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@100..900&display=swap" rel="stylesheet">
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/aos.css">
     <title>Portfolio</title>
@@ -24,8 +23,8 @@
         <ul class="nav-links">
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
-            <li><a href="#menu">SKILLS</a></li>
-            <li><a href="#chef">PROJECTS</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
             <li><a href="#contact">CONTACT</a></li>
         </ul>
 
@@ -100,19 +99,20 @@
         </div>
     </section>
 
-    <section>
-        <h2>My Skills</h2>
-        <p>Here are the technologies I'm proficient in.</p>
+    <section id="skills" class="skills">
+        <p class="section__subheader">Here are the technologies I'm proficient in.</p>
+        <h2 class="section__header">My Skills</h2>
 
         <div class="skills-container">
             <!-- Frontend -->
             <div class="category">
                 <h3>Frontend</h3>
                 <ul>
-                    <li><span class="icon">&#x1F4BB;</span> React</li>
-                    <li><span class="icon">&#9650;</span> Angular</li>
-                    <li><span class="icon">&#x1F441;</span> Vue.js</li>
-                    <li><span class="icon">&#x1F4A8;</span> Tailwind CSS</li>
+                    <li><span class="icon"><i class="ri-javascript-line"></i></span> Javascript/Typescript</li>
+                    <li><span class="icon"><i class="ri-reactjs-line"></i></span> React</li>
+                    <li><span class="icon"><i class="ri-angularjs-fill"></i></span> Angular</li>
+                    <li><span class="icon"><i class="ri-tailwind-css-fill"></i></span> Tailwind CSS</li>
+                    <li><span class="icon"><i class="ri-bootstrap-fill"></i></span> Bootstrap</li>
                 </ul>
             </div>
 
@@ -120,10 +120,9 @@
             <div class="category">
                 <h3>Backend</h3>
                 <ul>
-                    <li><span class="icon">&#x1F310;</span> Node.js</li>
-                    <li><span class="icon">&#x03C0;</span> Python</li>
-                    <li><span class="icon">&#x1F527;</span> Rust</li>
-                    <li><span class="icon">&#x1F4BE;</span> PostgreSQL</li>
+                    <li><span class="icon"><i class="ri-nodejs-line"></i></span> Node.js</li>
+                    <li><span class="icon"><i class="ri-window-fill"></i></span> ASP.NET</li>
+                    <li><span class="icon"><i class="ri-database-2-line"></i></span> MySQL</li>
                 </ul>
             </div>
 
@@ -131,14 +130,91 @@
             <div class="category">
                 <h3>Other</h3>
                 <ul>
-                    <li><span class="icon">&#x1F4C9;</span> Git</li>
-                    <li><span class="icon">&#x1F433;</span> Docker</li>
-                    <li><span class="icon">&#x2601;&#xFE0F;</span> Kubernetes</li>
-                    <li><span class="icon">&#x1F3A8;</span> Figma</li>
+                    <li><i class="ri-github-fill"></i> Git/Github</li>
+                    <li><i class="ri-camera-2-fill"></i> Photoshop</li>
                 </ul>
             </div>
         </div>
     </section>
+
+    <section class="skills">
+        <p class="section__subheader">My Qualifications</p>
+        <h2 class="section__header">Awesome Journey</h2>
+        <div class="journey__grid">
+            <div>
+                <div class="journey__grid__header">
+                    <span><i class="ri-graduation-cap-line"></i></span> Education
+                </div>
+                <div class="journey__card">
+                    <span><i class="ri-circle-fill"></i></span>
+                    <div>
+                        <h4>Master's in Digital Marketing</h4>
+                        <h5>Crafting impactful online strategies</h5>
+                        <p>
+                            <span><i class="ri-calendar-fill"></i></span> 2018-2020
+                        </p>
+                    </div>
+                </div>
+                <div class="journey__card">
+                    <span><i class="ri-circle-fill"></i></span>
+                    <div>
+                        <h4>Bachelor's in Business Administration</h4>
+                        <h5>Marketing & business strategies</h5>
+                        <p>
+                            <span><i class="ri-calendar-fill"></i></span> 2016-2018
+                        </p>
+                    </div>
+                </div>
+                <div class="journey__card">
+                    <span><i class="ri-circle-fill"></i></span>
+                    <div>
+                        <h4>Certified SEO Specialist</h4>
+                        <h5>Specialized training</h5>
+                        <p>
+                            <span><i class="ri-calendar-fill"></i></span> 2017-2020
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="journey__grid__header">
+                    <span><i class="ri-briefcase-line"></i></span> Experience
+                </div>
+                <div class="journey__card">
+                    <span><i class="ri-circle-fill"></i></span>
+                    <div>
+                        <h4>Digital Marketing Manager</h4>
+                        <h5>XYZ Agency</h5>
+                        <p>
+                            <span><i class="ri-calendar-fill"></i></span> 2023-2024
+                        </p>
+                    </div>
+                </div>
+                <div class="journey__card">
+                    <span><i class="ri-circle-fill"></i></span>
+                    <div>
+                        <h4>Social Media Strategist</h4>
+                        <h5>ABC Corp</h5>
+                        <p>
+                            <span><i class="ri-calendar-fill"></i></span> 2021-2023
+                        </p>
+                    </div>
+                </div>
+                <div class="journey__card">
+                    <span><i class="ri-circle-fill"></i></span>
+                    <div>
+                        <h4>Marketing Intern</h4>
+                        <h5>DEF Solutions</h5>
+                        <p>
+                            <span><i class="ri-calendar-fill"></i></span> 2020-2021
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+<script src="./js/aos.js"></script>
+<script src="./js/main.js"></script>
 
 </html>
