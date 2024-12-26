@@ -17,14 +17,14 @@
         <h1 class="nav-logo">John<span style="color: var(--primary-color)">Doe</span></h1>
 
         <div class="menu-toggle" id="mobile-menu">
-            <i class="fas fa-bars"></i>
+            <i class="ri-menu-fill"></i>
         </div>
 
         <ul class="nav-links">
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
             <li><a href="#contact">CONTACT</a></li>
         </ul>
 
@@ -33,10 +33,29 @@
                 Hire Me
             </button>
         </div>
+
+        <div class="side-menu">
+            <div class="nav-close-container">
+                <span id="nav-close" class="nav-close"><i class="ri-close-large-fill"></i> </span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <br>
+            <div class="nav-info">
+                <button class="btn">
+                    Hire Me
+                </button>
+            </div>
+        </div>
     </nav>
 
 
-    <header id="home" class="hero">
+    <section id="home" class="hero">
         <div class="hero__content">
             <h2>Hi, I am</h2>
             <h1>John Doe</h1>
@@ -56,7 +75,7 @@
                 <img src="assets/header.png" alt="header" />
             </div>
         </div>
-    </header>
+    </section>
 
     <section id="about" class="about">
         <div class="intro__image">
@@ -71,19 +90,6 @@
                 analytics, I combine creativity with data-driven insights to deliver
                 impactful campaigns.
             </p>
-            <div class="intro__grid">
-                <h5>
-                    <span><i class="ri-phone-line"></i></span> Phone
-                </h5>
-                <span>:</span>
-                <p>09 9876 54321</p>
-                <h5>
-                    <span><i class="ri-mail-line"></i></span> Email
-                </h5>
-                <span>:</span>
-                <p>mary.hardy@gmail.com</p>
-
-            </div>
             <h4>My Interests</h4>
             <div class="intro__flex">
                 <div>
@@ -100,9 +106,8 @@
     </section>
 
     <section id="skills" class="skills">
-        <p class="section__subheader">Here are the technologies I'm proficient in.</p>
-        <h2 class="section__header">My Skills</h2>
-
+        <p class="section__subheader">Why Choose Me</p>
+        <h2 class="section__header">My Experties Area</h2>
         <div class="skills-container">
             <!-- Frontend -->
             <div class="category">
@@ -137,7 +142,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section>
         <p class="section__subheader">My Qualifications</p>
         <h2 class="section__header">Awesome Journey</h2>
         <div class="journey__grid">
@@ -213,6 +218,75 @@
             </div>
         </div>
     </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio__container">
+            <p class="section__subheader">My Portfolio</p>
+            <h2 class="section__header">Recent Works</h2>
+            <div class="portfolio__grid">
+                <div class="portfolio__card mix web">
+                    <img src="assets/project-1.jpg" alt="project" />
+                </div>
+                <div class="portfolio__card mix web game">
+                    <img src="assets/project-2.jpg" alt="project" />
+                </div>
+                <div class="portfolio__card mix design">
+                    <img src="assets/project-3.jpg" alt="project" />
+                </div>
+                <div class="portfolio__card mix design web">
+                    <img src="assets/project-4.jpg" alt="project" />
+                </div>
+                <div class="portfolio__card mix design game">
+                    <img src="assets/project-5.jpg" alt="project" />
+                </div>
+                <div class="portfolio__card mix design">
+                    <img src="assets/project-6.jpg" alt="project" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <p class="section__subheader">Contact Me</p>
+        <h2 class="section__header">Have A Project On Your Mind</h2>
+        <div class="contact__container">
+            <div>
+                <div class="intro__grid">
+                    <h5>
+                        <span><i class="ri-phone-line"></i></span> Phone
+                    </h5>
+                    <span>:</span>
+                    <p>09 9876 54321</p>
+                    <h5>
+                        <span><i class="ri-mail-line"></i></span> Email
+                    </h5>
+                    <span>:</span>
+                    <p>mary.hardy@gmail.com</p>
+                </div>
+
+                <div class="contact-socials">
+                    <span class="contact-icon"><i class="ri-facebook-fill"></i></span>
+                    <span class="contact-icon"><i class="ri-linkedin-fill"></i></span>
+                    <span class="contact-icon"><i class="ri-github-fill"></i></span>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Full name">
+                    <input type="email" class="form-control" placeholder="Email address">
+                </div>
+                <input type="text" class="form-control" placeholder="Subject">
+                <textarea rows="5" class="form-control" placeholder="Tell about your project"></textarea>
+                <input type="submit" class="btn contact-btn" value="Send Message">
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright 2025 &copy; JohnDoe All rights reserved.</p>
+    </footer>
 </body>
 <script src="./js/aos.js"></script>
 <script src="./js/main.js"></script>

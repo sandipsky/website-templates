@@ -12,6 +12,7 @@
     --white-color: #FFFFFF;
     --black-color: #000000;
     --text-alt: #0c0a5d;
+    --light-bg: #f5f6f8;
     --shadow: 0 0 20px 5px rgb(232, 219, 219);
 }
 
@@ -20,6 +21,10 @@ body {
     width: 100%;
     overflow-x: hidden;
     font-family: 'Asap', sans-serif;
+}
+
+section {
+    padding: 10rem 12vw;
 }
 
 .section__subheader {
@@ -43,7 +48,7 @@ body {
     border-radius: 50px;
     font-size: 15px;
     cursor: pointer;
-    transition: opacity .3s;
+    transition: all ease .3s;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -76,7 +81,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 10vw;
+    padding: 25px 12vw;
     background: transparent;
     color: white;
     transition: all ease .5s;
@@ -155,7 +160,7 @@ body {
     overflow: hidden;
     display: none;
     transition: all ease-in-out 0.3s;
-    transform: translateX(100%);
+    transform: translateX(110%);
     z-index: 10;
     -webkit-box-shadow: 0px 0px 25px 0px rgba(214, 214, 214, 0.75);
     -moz-box-shadow: 0px 0px 25px 0px rgba(214, 214, 214, 0.75);
@@ -180,6 +185,9 @@ body {
 
 .nav-close {
     cursor: pointer;
+    color: var(--black-color);
+    width: 24px;
+    height: 24px;
 }
 
 .side-menu .nav-links a:hover {
@@ -265,12 +273,15 @@ body {
     overflow: hidden;
 }
 
+.hero-img img {
+    object-fit: cover;
+}
+
 /* herosection  */
 
 /* about  */
 
 .about {
-    padding: 10rem 10vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
@@ -383,8 +394,7 @@ body {
 /* skills  */
 
 .skills {
-    padding: 10rem 10vw;
-    min-height: 100vh;
+    background-color: var(--light-bg);
 }
 
 .skills-container {
@@ -394,10 +404,17 @@ body {
     padding-top: 5rem;
 }
 
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .skills h3 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .skills ul {
@@ -410,12 +427,6 @@ body {
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 0.5rem;
-    text-align: center;
-
-}
-
-.skills li span {
-    text-align: center;
 }
 
 .icon {
@@ -424,6 +435,8 @@ body {
 }
 
 /* skills */
+
+/* qualification */
 
 .journey__grid {
     max-width: 900px;
@@ -445,7 +458,7 @@ body {
     gap: 1rem;
     font-size: 1.4rem;
     font-weight: 600;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .journey__card {
@@ -489,4 +502,71 @@ body {
 
 .journey__card p {
     color: var(--text-light);
+}
+
+/* qualification */
+
+/* portfolio */
+
+.portfolio {
+    background-color: var(--light-bg);
+}
+
+.portfolio__grid {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.portfolio__card img {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* .portfolio */
+
+/* contact  */
+
+.contact__container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.contact-socials {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.form-control {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--light-bg);
+    padding: 1rem 0.6rem;
+    font-size: 0.95rem;
+    margin: 0.3rem;
+    outline: none;
+}
+
+.form-group {
+    display: flex;
+}
+
+/* contact */
+
+footer {
+    padding: 2rem 0;
+}
+
+footer p {
+    text-align: center;
 }
