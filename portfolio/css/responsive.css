@@ -22,7 +22,7 @@
 
     .hero,
     .about,
-    .contact__container {
+    .contact-container {
         grid-template-columns: repeat(1, 1fr);
         min-height: auto;
     }
@@ -32,28 +32,28 @@
         height: 305px;
     }
 
-    .hero__content {
+    .hero-content {
         order: 2;
     }
 
-    .image__content {
+    .image-content {
         order: 1;
     }
 
-    .intro__image {
+    .intro-image {
         display: none;
     }
 }
 
 @media screen and (max-width: 678px) {
 
-    .section__header {
+    .section-header {
         font-size: 2rem;
     }
 
-    .journey__grid,
+    .journey-grid,
     .skills-container,
-    .portfolio__grid {
+    .portfolio-grid {
         grid-template-columns: repeat(1, 1fr);
     }
 
