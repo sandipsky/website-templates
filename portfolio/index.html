@@ -13,6 +13,10 @@
 </head>
 
 <body>
+    <a href="#home" class="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
     <nav class="navbar">
         <h1 class="nav-logo">John<span style="color: var(--primary-color)">Doe</span></h1>
 
@@ -34,29 +38,31 @@
             </button>
         </div>
 
-        <div class="side-menu">
-            <div class="nav-close-container">
-                <span id="nav-close" class="nav-close"><i class="ri-close-large-fill"></i> </span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-            <br>
-            <div class="nav-info">
-                <button class="btn">
-                    Hire Me
-                </button>
-            </div>
-        </div>
+
     </nav>
+
+    <div class="side-menu">
+        <div class="nav-close-container">
+            <span id="nav-close" class="nav-close"><i class="ri-close-large-fill"></i> </span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <br>
+        <div class="nav-info">
+            <button class="btn">
+                Hire Me
+            </button>
+        </div>
+    </div>
 
 
     <section id="home" class="hero">
-        <div class="hero-content">
+        <div class="hero-content" data-aos="fade-right">
             <h2>Hi, I am</h2>
             <h1>John Doe</h1>
             <h3>Digital Marketing Expert</h3>
@@ -70,7 +76,7 @@
                 <button class="btn secondary-btn">Contact Me</button>
             </div>
         </div>
-        <div class="image-content">
+        <div class="image-content" data-aos="fade-left">
             <div class="hero-img">
                 <img src="assets/header.png" alt="header" />
             </div>
@@ -78,10 +84,10 @@
     </section>
 
     <section id="about" class="about">
-        <div class="intro-image">
+        <div class="intro-image" data-aos="fade-right">
             <img src="assets/intro.png" alt="intro" />
         </div>
-        <div class="intro-content">
+        <div class="intro-content" data-aos="fade-left">
             <h2 class="section-header">About Me</h2>
             <p class="intro-description">
                 I'm John Doe, a dedicated Digital Marketing Expert with a proven
@@ -106,18 +112,18 @@
     </section>
 
     <section id="skills" class="skills">
-        <p class="section-subheader">Why Choose Me</p>
-        <h2 class="section-header">My Experties Area</h2>
-        <div class="skills-container">
+        <p class="section-subheader" data-aos="fade-down">Why Choose Me</p>
+        <h2 class="section-header" data-aos="fade-down">My Experties Area</h2>
+        <div class="skills-container" data-aos="fade-up">
             <!-- Frontend -->
             <div class="category">
                 <h3>Frontend</h3>
                 <ul>
-                    <li><span class="icon"><i class="ri-javascript-line"></i></span> Javascript/Typescript</li>
-                    <li><span class="icon"><i class="ri-reactjs-line"></i></span> React</li>
-                    <li><span class="icon"><i class="ri-angularjs-fill"></i></span> Angular</li>
-                    <li><span class="icon"><i class="ri-tailwind-css-fill"></i></span> Tailwind CSS</li>
-                    <li><span class="icon"><i class="ri-bootstrap-fill"></i></span> Bootstrap</li>
+                    <li><span class="icon"><i class="ri-javascript-line ri-xl"></i></span> Javascript/Typescript</li>
+                    <li><span class="icon"><i class="ri-reactjs-line ri-xl"></i></span> React</li>
+                    <li><span class="icon"><i class="ri-angularjs-fill ri-xl"></i></span> Angular</li>
+                    <li><span class="icon"><i class="ri-tailwind-css-fill ri-xl"></i></span> Tailwind CSS</li>
+                    <li><span class="icon"><i class="ri-bootstrap-fill ri-xl"></i></span> Bootstrap</li>
                 </ul>
             </div>
 
@@ -125,9 +131,9 @@
             <div class="category">
                 <h3>Backend</h3>
                 <ul>
-                    <li><span class="icon"><i class="ri-nodejs-line"></i></span> Node.js</li>
-                    <li><span class="icon"><i class="ri-window-fill"></i></span> ASP.NET</li>
-                    <li><span class="icon"><i class="ri-database-2-line"></i></span> MySQL</li>
+                    <li><span class="icon"><i class="ri-nodejs-line ri-xl"></i></span> Node.js</li>
+                    <li><span class="icon"><i class="ri-window-fill ri-xl"></i></span> ASP.NET</li>
+                    <li><span class="icon"><i class="ri-database-2-line ri-xl"></i></span> MySQL</li>
                 </ul>
             </div>
 
@@ -135,18 +141,18 @@
             <div class="category">
                 <h3>Other</h3>
                 <ul>
-                    <li><i class="ri-github-fill"></i> Git/Github</li>
-                    <li><i class="ri-camera-2-fill"></i> Photoshop</li>
+                    <li><i class="ri-github-fill ri-xl"></i> Git/Github</li>
+                    <li><i class="ri-camera-2-fill ri-xl"></i> Photoshop</li>
                 </ul>
             </div>
         </div>
     </section>
 
     <section>
-        <p class="section-subheader">My Qualifications</p>
-        <h2 class="section-header">Awesome Journey</h2>
+        <p class="section-subheader" data-aos="fade-down">My Qualifications</p>
+        <h2 class="section-header" data-aos="fade-down">Awesome Journey</h2>
         <div class="journey-grid">
-            <div>
+            <div data-aos="fade-right">
                 <div class="journey-grid-header">
                     <span><i class="ri-graduation-cap-line"></i></span> Education
                 </div>
@@ -181,7 +187,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div data-aos="fade-left">
                 <div class="journey-grid-header">
                     <span><i class="ri-briefcase-line"></i></span> Experience
                 </div>
@@ -221,36 +227,90 @@
 
     <section id="portfolio" class="portfolio">
         <div class="portfolio-container">
-            <p class="section-subheader">My Portfolio</p>
-            <h2 class="section-header">Recent Works</h2>
-            <div class="portfolio-grid">
+            <p class="section-subheader" data-aos="fade-down">My Portfolio</p>
+            <h2 class="section-header" data-aos="fade-down">Recent Works</h2>
+            <div class="portfolio-grid" data-aos="fade-up">
                 <div class="portfolio-card mix web">
                     <img src="assets/project-1.jpg" alt="project" />
+                    <div class="card-overlay">
+                        <div class="card-overlay-content">
+                            <div><h2>Inventory Management System</h2> </div>
+                            <div>
+                                <a href="https://www.github.com" target="_blank" class="portfolio-icon"><i class="ri-github-fill ri-2x"></i></a>
+                                <a href="https://www.github.com" target="_blank" class="portfolio-icon"><i class="ri-external-link-line ri-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="portfolio-card mix web game">
                     <img src="assets/project-2.jpg" alt="project" />
+                    <div class="card-overlay">
+                        <div class="card-overlay-content">
+                            <div><h2>Inventory Management System</h2> </div>
+                            <div>
+                                <a href="https://www.github.com" target="_blank" class="portfolio-icon"><i class="ri-github-fill ri-2x"></i></a>
+                                <a href="https://www.github.com" target="_blank" class="portfolio-icon"><i class="ri-external-link-line ri-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="portfolio-card mix design">
                     <img src="assets/project-3.jpg" alt="project" />
+                    <div class="card-overlay">
+                        <div class="card-overlay-content">
+                            <div><h2>Inventory Management System</h2> </div>
+                            <div>
+                                <a href="https://www.github.com" target="_blank" class="portfolio-icon"><i class="ri-github-fill ri-2x"></i></a>
+                                <a href="https://www.github.com" target="_blank" class="portfolio-icon"><i class="ri-external-link-line ri-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="portfolio-card mix design web">
                     <img src="assets/project-4.jpg" alt="project" />
+                    <div class="card-overlay">
+                        <div class="card-overlay-content">
+                            <div><h2>Inventory Management System</h2> </div>
+                            <div>
+                                <a href="https://www.github.com" target="_blank" class="portfolio-icon"><i class="ri-github-fill ri-2x"></i></a>
+                                <a href="https://www.github.com" target="_blank" class="portfolio-icon"><i class="ri-external-link-line ri-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="portfolio-card mix design game">
                     <img src="assets/project-5.jpg" alt="project" />
+                    <div class="card-overlay">
+                        <div class="card-overlay-content">
+                            <div><h2>Inventory Management System</h2> </div>
+                            <div>
+                                <a href="https://www.github.com" target="_blank" class="portfolio-icon"><i class="ri-github-fill ri-2x"></i></a>
+                                <a href="https://www.github.com" target="_blank" class="portfolio-icon"><i class="ri-external-link-line ri-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="portfolio-card mix design">
                     <img src="assets/project-6.jpg" alt="project" />
+                    <div class="card-overlay">
+                        <div class="card-overlay-content">
+                            <div><h2>Inventory Management System</h2> </div>
+                            <div>
+                                <a href="https://www.github.com" target="_blank" class="portfolio-icon"><i class="ri-github-fill ri-2x"></i></a>
+                                <a href="https://www.github.com" target="_blank" class="portfolio-icon"><i class="ri-external-link-line ri-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
-        <p class="section-subheader">Contact Me</p>
-        <h2 class="section-header">Have A Project On Your Mind</h2>
+        <p class="section-subheader" data-aos="fade-down">Contact Me</p>
+        <h2 class="section-header" data-aos="fade-down">Have A Project On Your Mind</h2>
         <div class="contact-container">
-            <div>
+            <div data-aos="fade-right">
                 <div class="intro-grid">
                     <h5>
                         <span><i class="ri-phone-line"></i></span> Phone
@@ -265,13 +325,13 @@
                 </div>
 
                 <div class="contact-socials">
-                    <a class="contact-icon"><i class="ri-facebook-fill"></i></a>
-                    <a class="contact-icon"><i class="ri-linkedin-fill"></i></a>
-                    <a class="contact-icon"><i class="ri-github-fill"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" class="contact-icon"><i class="ri-facebook-fill ri-2x"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" class="contact-icon"><i class="ri-linkedin-fill ri-2x"></i></a>
+                    <a href="https://www.github.com" target="_blank" class="contact-icon"><i class="ri-github-fill ri-2x"></i></a>
                 </div>
             </div>
 
-            <form class="contact-form">
+            <form class="contact-form" data-aos="fade-left">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Full name">
                     <input type="email" class="form-control" placeholder="Email address">
